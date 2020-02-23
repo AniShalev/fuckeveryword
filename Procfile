@@ -1,1 +1,1 @@
-worker: python everyword.py
+worker: python main.py
