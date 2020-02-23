@@ -29,10 +29,10 @@ def tweet(status):
 	
 	# http://dev.twitter.com/apps/myappid
 	CONSUMER_KEY = os.environ.get('TWITTER_ACCESS_TOKEN', None)
-	CONSUMER_SECRET = os.environ.get('TWITTER_ACCESS_TOKEN', None)
+	CONSUMER_SECRET = os.environ.get('TWITTER_ACCESS_TOKEN_SECRET', None)
 	# http://dev.twitter.com/apps/myappid/my_token
-	ACCESS_TOKEN_KEY = os.environ.get('TWITTER_ACCESS_TOKEN', None)
-	ACCESS_TOKEN_SECRET = os.environ.get('TWITTER_ACCESS_TOKEN', None)
+	ACCESS_TOKEN_KEY = os.environ.get('TWITTER_CONSUMER_KEY', None)
+	ACCESS_TOKEN_SECRET = os.environ.get('TWITTER_CONSUMER_SECRET', None)
 
 	auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 	auth.set_access_token(ACCESS_TOKEN_KEY, ACCESS_TOKEN_SECRET)
